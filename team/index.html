@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CCC Contributers</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="team.css">
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+  <script type="text/javascript" src="../script/jquery.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="../script/nav.js"></script>
+	<style type="text/css">
+        #count,#dots{
+          font-size: 30px;
+          transition: color 2s;
+        }
+        .togglec{
+          color: red;
+        }
+        .iron{
+           position:absolute;right:0px;height: 500px; width: 130px; z-index: 20;transition: right 1s;
+        }
+        .iron:hover{
+          right: 30px;
+        }
+        #contri{
+          position: absolute;
+          z-index: 109;
+          transition: right 2s;
+          left: 88px;
+          background-color: #85ff70;
+          color:  #4169e1;
+          padding: 3px 8px 3px 15px;
+          border-top-right-radius: 15px;
+        }
+        h3{
+          font-size: 50px !important;
+        }
+	</style>
+  <script>
+    $(function(){
+      $("#msg").hide();
+      $("#contri").hide();
+      $("#count").mouseover(function(){
+        $("#dots").toggle(1000);
+        $("#count").toggleClass("togglec");
+      })
+      $(".iron").mouseover(function(){
+        $("#msg").show(200);
+      })
+      $(".iron").mouseout(function(){
+        $("#msg").hide();
+      })
+      $("#hulk").mouseover(function(){
+        $("#contri").show(200);
+        $("#hulk").css("height","550px");
+      })
+      $("#hulk").mouseout(function(){
+        $("#contri").hide();
+        $("#hulk").css("height","500px");
+      })
+    })
+  </script>
+</head>
+<body>
+
+<div class="jumbotron container borderimg1">
+	<div class="col-sm-3 col-md-3"><img src="../imgs/ccc_2.png" height="140px" style="margin:-30px 0 -30px 0" class="logo"></div>
+	<div class="col-sm-9 col-md-8 col-md-offset-1">
+    <h3><span style="font-family: 'Nova Flat', cursive;">
+      <span style="color:#e8491d;">C</span>.C.C 
+      </span> - Contributors
+    </h3>
+  </div>
+</div>
+
+<div class="container" style="margin-top: -28px; padding:0 0 0 0">
+    <div id='cssmenu'>
+    <ul>
+       <li class='active'><a href='#'>Home</a></li>
+       <li><a href='team'>Contributors</a></li>
+       <li><a href='#'>Gallery</a></li>
+       <li><a href='#'>Campaigns</a></li>
+       <li><a href='#'>About Us</a></li>
+       <li><a href='contact'>Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<img src="hul.png" style="position:absolute;height: 500px; width: 130px; z-index: 110;" id="hulk">
+
+<div>
+  <h2 id="contri">I am also Contributor</h2>
+</div>
+
+<img src="iron.png" class="iron">
+<img src="beam.png" id="msg" style="position: absolute;right: 20px; z-index: 10; height:300px">
+
+<div class="container" style="margin-top:20px;">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>President</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Vice President</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Secretary</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Secretary</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Public Represent</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Web Admin</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Publisher</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="pic.jpg" alt="piv">
+          <div class="overlay">
+             <h2>Designer</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="text-align:center">
+  <span id="count">
+    Counting Club Members
+  </span>
+  <span id="dots">
+    ...
+  </span>
+  <span id="sleep">
+    <img src="sleeper.png" height="100px" width="100px">
+  </span>
+</div>
+
+</body>
+</html>
