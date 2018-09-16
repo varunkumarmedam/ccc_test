@@ -16,15 +16,14 @@
   <script type="text/javascript" src="script/main.js"></script>
   <script type="text/javascript" src="script/nav.js"></script>
   
-
      <!--offline--><link rel="stylesheet" type="text/css" href="css/bootstrap.css">
      <!--offline--><script src="css/bootstrap.js"></script>
 
   <style type="text/css">
     @media(min-width: 360px){
-    	p.ccc_head{display: none;}
-    	p.ccc{display: block; color: blue;}
-      	.carousel_size{height: 400px;}
+      p.ccc_head{display: none;}
+      p.ccc{display: block; font-size: 30px; color: green;}
+      .carousel_size{height: 400px;}
     }
     @media (min-width: 768px){
       p.ccc_head{color: green; font-size: 22px;display: block;}
@@ -35,22 +34,42 @@
       p.ccc_head{color:white;font-size: 30px;display: block;}
       p.ccc{display: none;}
       .carousel_size{height: 620px;}
-
     }
     .test{
       color:  #e8491d;
     }
-  	.parallax-window {
-	    min-height: 400px;
-	    background: transparent;
-	}
-	.nav:hover{
-		background-color: white;
-		color: black !important;
-		-webkit-transition: background-color 1s,color 1s; /* For Safari 3.1 to 6.0 */
-    	transition: background-color 1s,color 1s;
-	}
-	
+    .parallax-window {
+      min-height: 400px;
+      background: transparent;
+    }
+    .nav:hover{
+      background-color: white;
+      color: black !important;
+      -webkit-transition: background-color 1s,color 1s; /* For Safari 3.1 to 6.0 */
+      transition: background-color 1s,color 1s;
+    }
+
+
+
+    .noti_head{
+      background-color: #35424a;
+      font-size: 25px;
+      padding: 10px 20px 6px 8px;
+      border-bottom:solid #e8491d 2px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .noti_body{
+      height: 250px;
+      background-color: grey;
+      border-left:solid white 10px;
+      border-right:solid white 10px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .notifications{
+      color: white;
+    }
   </style>
 </head>
 <body onload="typeWriter();">
@@ -82,6 +101,15 @@
             $("#main").fadeIn(1000);
           });
         });
+
+        $(".noti_head").click(function(){
+        $(".noti_body").slideToggle(400);
+      })
+      $("marquee").hover(function () { 
+          this.stop();
+      }, function () {
+          this.start();
+      });
     });
   </script>
 
@@ -96,7 +124,7 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
 <!-- Time to end loader --> 
 <div id="main"> 
 	<!-- Toolbar -->
-	<div style="background-color:#35424a;position: fixed;z-index: 100;border-bottom: solid #e8491d 2px;" class="col-sm-12 col-md-12 col-xs-12">
+	<div style="background-color:#35424a;position: fixed;z-index: 100;border-bottom: solid #e8491d 2px" class="col-sm-12 col-md-12 col-xs-12">
 		<p class="ccc_head col-md-8 col-sm-6 col-xs-0" style="padding-left:0px;margin-top: 7px;font-family: 'Nova Flat', cursive;"><span class="test"> CREATIVE </span> COMPUTING CLUB</p>
 		<p class="ccc col-md-0 col-sm-0 col-xs-4" style="padding-left:0px;font-family: 'Cinzel Decorative', cursive;margin-top: 7px;font-family: 'Nova Flat', cursive;">C.C.C</p>
 
@@ -154,7 +182,8 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
 		</a>
 	</div>
 
-  <div id='cssmenu'>
+  <!--Navigation Bar-->
+  <div id='cssmenu' style="margin-bottom: 10px;">
     <ul>
        <li class='active'><a href='#'>Home</a></li>
        <li><a href='team'>Contributors</a></li>
@@ -165,10 +194,35 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
     </ul>
   </div>
 
-	<div class="jumbotron container">
+  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
+    <div class="col-md-8 col-sm-12">
+      <span class="col-md-6 col-sm-12 col-xs-12">Hello world</span>
+      <span class="col-md-6 col-sm-12 col-xs-12">Hello world</span>
+    </div>  
+
+    <!-- Notifications -->
+    <div class=" col-md-4 col-sm-12 col-xs-12" style="height: 350px">
+      <div class="noti_head col-md-12 col-sm-12">
+        <span style="color: #e8491d" class="col-md-10 col-sm-10">Notifications</span>
+        <span class="glyphicon glyphicon-chevron-down col-md-1 col-sm-1"></span>
+      </div>
+      <div class="noti_body col-sm-12">
+        <marquee direction="up" scrollamount="3" behavior="scroll" height="250px" id="test">
+          <ul class="notifications">
+            <li>Hello world</li>
+            <li>varunvorld</li>
+            <li>Test world</li>
+          </ul>
+        </marquee>
+      </div>
+    </div>
+
+  </div>
+
+<!-- 	<div class="jumbotron container">
 	    <h1 style="font-family: 'Cinzel Decorative', cursive;margin-top: 20px;">Bharath University</h1>
 	    <p>Some content goes here...</p>
-	</div>
+	</div> -->
 
 </div>
           
