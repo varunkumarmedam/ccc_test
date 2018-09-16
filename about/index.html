@@ -1,17 +1,22 @@
 <!DOCTYPE>
 <html lang="en">
 <head>
-  <title>test page</title>  
+  <title>C.C.C - About Info</title>  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="about.css">
    	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/nav.css">
   	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="../script/nav.js"></script>
 
 	<style type="text/css">
+
+	::-webkit-scrollbar {width: 10px;}
+	::-webkit-scrollbar-track {box-shadow: inset 0 0 100px #35424a;}
+	::-webkit-scrollbar-thumb {background: #e8491d;}
+	::-webkit-scrollbar-thumb:hover {background: #b30000; }
 
 	@media(min-width: 360px){
 		img.logo{height: 80px;margin:-12px 0px -80px -10px;}
@@ -27,47 +32,6 @@
 		span.ans{font-size:20px;}
 		}
 
-	.side_box{
-		background-color: #e8491d;
-		border-radius: 10px;
-		height: 200px;
-		color:white;
-		padding: 0px 5px 0 10px;
-		font-size: 20px;
-		transition: border 1s;
-	}
-	.side_box:hover{
-		border: solid #35424a 5px;
-		border-radius: 0px;
-	}
-
-	.box{
-		padding:0 0 0 0;
-	}
-	.que{
-		padding-top: -10px;
-		background-color: #999999;
-		color: white;
-	}
-	.ans{
-		background-color: #ededed;
-		border: solid #999999 2px;
-		border-top: none;
-		font-size: 20px;
-	}
-	.heading{
-	  background-color: #35424a;
-	  font-size: 25px;
-	  color: #e8491d;
-	  border-bottom: solid #e8491d 2px;
-	  padding:10px 10px 10px 10px;
-	  margin-top: 10px;
-	  margin-bottom: 10px;
-	  text-align: center;
-	  border-top-right-radius: 10px;
-	  border-top-left-radius: 10px;
-	}
-
 	</style>
 	<script type="text/javascript">
     $(document).ready(function(){
@@ -77,6 +41,7 @@
     	$("#"+id).slideToggle(300);
     }
 	</script>
+
 </head>
 <body>
 	<!-- Heading Container -->
@@ -88,7 +53,7 @@
 			<h2 class="info">
 				<span style="font-family: 'Nova Flat', cursive;">
 					<span style="color:#e8491d;">C</span>.C.C 
-				</span> - About Us
+				</span> - About Info
 			</h2>
 		</div>
 	</div>
@@ -97,12 +62,12 @@
 	<div class="container" style="margin-top: -28px; padding:0 0 0 0; margin-bottom: 20px">
 		<div id='cssmenu'>
 			<ul>
-				<li class='active'><a href='#'>Home</a></li>
-				<li><a href='team'>Contributors</a></li>
-				<li><a href='#'>Gallery</a></li>
+				<li><a href='../'>Home</a></li>
+				<li><a href='../team'>Contributors</a></li>
+				<li><a href='../gallery'>Gallery</a></li>
 				<li><a href='#'>Campaigns</a></li>
 				<li><a href='#'>About Us</a></li>
-				<li><a href='contact'>Contact Us</a></li>
+				<li><a href='../contact'>Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -153,7 +118,8 @@
 	</div>
 
 	<div class="col-sm-12 col-xs-12" style="text-align: center;margin-top:10px;">
-		<a href="faqs.pdf" download="ccc-faqs.pdf" class="btn btn-success">More F.A.Q 's</a>
+		<a href="faqs.pdf" download="ccc-faqs.pdf" class="btn btn-success" disabled>More F.A.Q 's</a>
+		<img src="hand2.png" height="50px" width="50px" style="margin-left:5px;">
 	</div>
 
 	<div class="col-sm-12 col-xs-12">
@@ -161,13 +127,20 @@
 			Our Sponcers <img src="show.png" height="30px" width="30px">
 		</div>
 		<marquee>
-			<a href="#"><img src="spo1.jpg" height="70px" width="100px" style="margin-right: 10px;"></a>
-			<a href="#"><img src="spo1.jpg" height="70px" width="100px" style="margin-right: 10px;"></a>
+			<a href="#"><img src="zoho.png" height="80px" width="120px" style="margin-right: 10px;" class="spons"></a>
+			<a href="#"><img src="zoho.png" height="80px" width="120px" style="margin-right: 10px;" class="spons"></a>
 		</marquee>
 	</div>
 
-<footer>
-<p>creative computing club copyright &copy; 2018</p>
-</footer>
+	<footer>
+		<p class="col-sm-12 col-xs-12" style="text-align:center;
+		  background-color:#e8491d;
+		  color: white;
+		  bottom: 0;
+		  margin-top:50px;
+		  margin-bottom: 0px;
+		  font-style: bold;
+		  font-size: 20px;">creative computing club copyright &copy; 2018</p>
+	</footer>
 </body>
 </html>

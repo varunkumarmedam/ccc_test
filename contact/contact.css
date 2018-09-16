@@ -1,0 +1,36 @@
+.side_bar{
+	position: fixed;
+	left: 0;
+	z-index: 20;
+	transition: border-left 1s;
+}
+.side_bar:hover{
+	border-left: solid white 10px; 
+}
+.heading{
+	background-color: #35424a;
+	font-size: 25px;
+	color: #e8491d;
+	border-bottom: solid #e8491d 2px;
+	padding:10px 10px 10px 10px;
+	margin-bottom: 20px;
+}
+body{
+	background-image: url('back.jpg');
+	background-size: 100% 100%;
+}
+.form{
+	background: rgba(255,255,255,0.3);
+	border-top-right-radius: 20px;
+}
+.txt{
+	margin-top:5px;
+}
+.my_data{
+	padding-right: 20px;
+	transition: color 0.5s;
+}
+.my_data:hover{
+	background: rgba(0,0,0,0.5);
+	color: red;
+}

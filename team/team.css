@@ -1,10 +1,10 @@
 .borderimg1 {
   margin-top: 10px;
-    border: 20px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(border.png) 50 round; /* Safari 3.1-5 */
-    -o-border-image: url(border.png) 50 round; /* Opera 11-12.1 */
-    border-image: url(border.png) 50 round;
+  border: 20px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(border.png) 50 round; /* Safari 3.1-5 */
+  -o-border-image: url(border.png) 50 round; /* Opera 11-12.1 */
+  border-image: url(border.png) 50 round;
 }
 
 .hovereffect {
