@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avenger Selection</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<script type="text/javascript" src="../script/jquery.js"></script>
+	<style type="text/css">
+		.iron{
+			padding: 20px 20px 20px 20px;
+			transition-property: transform background-color;
+			transition-duration:1.5s;
+		}
+		.iron:hover{
+			transform: scale(1.2);
+			background-color:red;
+		}
+		.container input[type='radio'] {
+		    opacity: 0;
+		}
+		.checkmark {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 20px;
+		    width: 20px;
+		    background-color: #eee;
+		    border-radius: 10%;
+		}
+		.container input:checked ~ .checkmark {
+		    background-color: green;
+		}
+		.fav{
+			font-size: 30px;
+			text-align: center;
+			color: red;
+			background-color: white;
+			margin-bottom: 30px;
+		}
+		.fav:hover{
+			color: white;
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$('.butt').attr("disabled",true);
+			$('.butt').addClass("btn-danger");
+			$('input[type=radio]').click(function(){
+				$('.butt').attr('disabled',false);
+				$('.butt').removeClass('btn-danger');
+			})
+		})
+	</script>
+</head>
+<body>
+	<img src="back.png" style="height: 250px;width: 100%;margin-bottom: -30px;">
+	<div class="container col-sm-12">
+		<form method="get" action="#">
+			<div class="col-sm-12 fav"><center>Boys Fav :)</center></div>
+			<div class="col-sm-12">
+			<label class="radio col-sm-3" style="position: block;">
+ 				<input type="radio" name="optradio" value="iron">
+ 				<span class="checkmark iron"><img src="iron_select.png" height="300px" width="180px"><h3 style="color: red;">IRONMAN</h3></span>
+    		</label>
+    		<label class="radio col-sm-3">
+ 				<input type="radio" name="optradio" value="hulk">
+ 				<span class="checkmark iron"><img src="hulk_select.png" height="350px">
+ 					<h3 style="color: green">HULK</h3>
+ 				</span>
+
+    		</label>
+    		<label class="radio col-sm-3">
+ 				<input type="radio" name="optradio" value="captain">
+ 				<span class="checkmark iron" ><img src="captain_select.png" height="300px">
+ 					<h3 style="color: blue;">CAPTAIN_AMERICA</h3>
+ 				</span>
+    		</label>
+    		<label class="radio col-sm-3">
+ 				<input type="radio" name="optradio" value="spider">
+ 				<span class="checkmark iron"><img src="spider_select.png" height="300px">
+ 					<h3 style="color: red;">SPIDER_MAN</h3>
+ 				</span>
+    		</label>
+
+    		<div class="col-sm-12 fav" style="margin-top: 450px;">Girls Choice</div>
+    		<label class="radio col-sm-3"  style="margin-bottom: 100px;">
+ 				<input type="radio" name="optradio">
+ 				<span class="checkmark iron"><img src="widow_select.jpg" height="300px">
+ 					<h3>BLACK_WIDOW</h3>
+ 				</span>
+    		</label>
+    		<label class="radio col-sm-3">
+ 				<input type="radio" name="optradio">
+ 				<span class="checkmark iron"><img src="valkyrine_select.png" height="300px">
+ 					<h3 style="color: blue;">VALKYRINE</h3>
+ 				</span>
+    		</label>
+    		<label class="radio col-sm-3">
+ 				<input type="radio" name="optradio">
+ 				<span class="checkmark iron"><img src="firestar_select.png" height="300px" width="200px">
+ 					<h3 style="color: yellow">FIRE STAR</h3>
+ 				</span>
+    		</label>
+    		<label class="radio col-sm-3">
+ 				<input type="radio" name="optradio">
+ 				<span class="checkmark iron"><img src="storm_select.png" height="300px">
+ 					<h3><img src="storm_extra" height="30px" width="30px" style="float: right;"> STORM</h3>
+ 				</span>
+    		</label>
+    		</div>
+    		<div class="col-sm-12" style="margin-top: 300px;">    			
+    			<center><input type="submit" name="submit" value="submit" class="btn btn-success btn-lg butt">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

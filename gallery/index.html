@@ -23,10 +23,12 @@
 
 	@media(min-width: 360px){
 		img.logo{height: 80px;margin:-12px 0px -80px -10px;}
+		div.warning{display: block;}
 	}@media(min-width: 768px){
 		img.logo{height: 120px;}
 	}@media(min-width: 992px){
 		img.logo{height: 150px; margin:-35px 0 -35px 10px;}
+		div.warning{display: none;}
 		}
 
 	body{
@@ -39,6 +41,19 @@
 		font-style: italic;
 	}
 	</style>
+
+	<script type="text/javascript">
+
+		$(function(){
+		function getRandomInt(max) {
+		return  1 + Math.floor(Math.random() * Math.floor(max));
+		}
+		$(".effect").addClass("effect"+getRandomInt(16));
+		$(".effect").addClass("square");
+		})
+
+		
+	</script>
 </head>
 <body>
 
@@ -63,19 +78,95 @@
 				<li><a href='../'>Home</a></li>
 				<li><a href='../team'>Contributors</a></li>
 				<li><a href='#'>Gallery</a></li>
-				<li><a href='#'>Campaigns</a></li>
+				<li><a href='../events'>Campaigns</a></li>
 				<li><a href='../about'>About Us</a></li>
 				<li><a href='../contact'>Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
 
+	<div class="warning">
+		<h3>Use PC for best results</h3>
+	</div>
+
 	<div class="container col-md-12 col-sm-12 col-xs-12">
 
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
+				<a href="https://drive.google.com/open?id=125RkM4PQs_3e69-dRsZGRTxvBD9ejxDA" target="_blank">
+					<div class="img"><img src="imgs/box1.jpeg" alt="img"></div>
+					<div class="info">
+						<h3>Club Inauguration</h3>
+						<h4>Happend at Sep 05, 2018</h4>
+					</div>
+				</a>
+			</div> 
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
+				<a href="https://drive.google.com/open?id=1vItpYwewuoB0GrIOCqRtG7zSqxr_2322" target="_blank">
+					<div class="img"><img src="happy.jpg" alt="img"></div>
+					<div class="info">
+						<h3>TECHWIZZ</h3>
+						<h4>Tech and Non-Tech Events are started from here</h4>
+					</div>
+				</a>
+			</div> 
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
 				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
+					<div class="info">
+						<h3>Heading here</h3>
+						<p>Description goes here</p>
+					</div>
+				</a>
+			</div> 
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
+				<a href="#">
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
+					<div class="info">
+						<h3>Heading here</h3>
+						<p>Description goes here</p>
+					</div>
+				</a>
+			</div> 
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
+				<a href="#">
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
+					<div class="info">
+						<h3>Heading here</h3>
+						<p>Description goes here</p>
+					</div>
+				</a>
+			</div> 
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
+				<a href="#">
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
+					<div class="info">
+						<h3>Heading here</h3>
+						<p>Description goes here</p>
+					</div>
+				</a>
+			</div> 
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
+				<a href="#">
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
 					<div class="info">
 						<h3>Heading here</h3>
 						<p>Description goes here</p>
@@ -85,9 +176,9 @@
 		</div>
 
 		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
 				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
 					<div class="info">
 						<h3>Heading here</h3>
 						<p>Description goes here</p>
@@ -96,10 +187,10 @@
 			</div> 
 		</div>
 
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
+		<div class="col-md-2 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
+			<div class="ih-item colored effect right_to_left" style="margin-bottom:20px;">
 				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
+					<div class="img"><img src="imgs/logo.png" alt="img"></div>
 					<div class="info">
 						<h3>Heading here</h3>
 						<p>Description goes here</p>
@@ -108,68 +199,9 @@
 			</div> 
 		</div>
 
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
-				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
-					<div class="info">
-						<h3>Heading here</h3>
-						<p>Description goes here</p>
-					</div>
-				</a>
-			</div> 
-		</div>
-
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
-				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
-					<div class="info">
-						<h3>Heading here</h3>
-						<p>Description goes here</p>
-					</div>
-				</a>
-			</div> 
-		</div>
-
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
-				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
-					<div class="info">
-						<h3>Heading here</h3>
-						<p>Description goes here</p>
-					</div>
-				</a>
-			</div> 
-		</div>
-
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
-				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
-					<div class="info">
-						<h3>Heading here</h3>
-						<p>Description goes here</p>
-					</div>
-				</a>
-			</div> 
-		</div>
-
-		<div class="col-md-2 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-2">
-			<div class="ih-item circle colored effect16 right_to_left" style="margin-bottom:20px;">
-				<a href="#">
-					<div class="img"><img src="happy.png" alt="img"></div>
-					<div class="info">
-						<h3>Heading here</h3>
-						<p>Description goes here</p>
-					</div>
-				</a>
-			</div> 
-		</div>
 	</div>
 	<div class="col-md-12 col-sm-10" style="text-align: center;margin-top:50px;">
-		<span style="background-color: orange; font-size: 20px;padding: 15px 15px 15px 15px;" class="exp">Continue the experience from <a href="https://drive.google.com/drive/u/0/folders/1SeMqMDRVCBist5Ir0bfTfs70a3M0Sfvq" target="_blank"> here <img src="gallery.png" height="50px" width="50px"></a></span>
+		<span style="background-color: orange; font-size: 20px;padding: 15px 15px 15px 15px;" class="exp">Continue the experience from <a href="https://drive.google.com/open?id=1n2Z5-AmjIcF5KHh9TQnAUbkv9c_3lL7g" target="_blank"> here <img src="gallery.png" height="50px" width="50px"></a></span>
 	</div>
 	<footer>
 		<p class="col-sm-12 col-xs-12" style="text-align:center;

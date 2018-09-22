@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+  <title>C.C.C - Home</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <script type="text/javascript" src="../script/jquery.js"></script>
+	<style type="text/css">
+	body{
+		background-size: 100% 100%;
+	}
+	.captain{
+		color: blue;
+		font-size: 20px;
+		font-style: italic;
+		margin-top: 220px;
+	}
+	.captain_lines{
+		color: red!important;
+	}
+	.captain_hover{
+		border:dashed red 3px;
+		background-color: rgba(255,255,255,0.5);
+	}
+	ul{
+		list-style: none;
+	}
+	@media(min-width: 992px){
+		.captain_media{
+			margin-left: 450px;
+		}
+	}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$avenger = 'captain';
+			$back = $avenger+'.jpg';
+			console.log($back);
+			$('body').css("background-image", "url('"+$back+"')");
+			$('.content').addClass($avenger);
+			$('.content').mouseover(function(){
+				$('.content').addClass($avenger+"_hover");
+			})
+			if ($avenger == "captain") {
+				$('.main').addClass("captain_media");
+			}
+			$('.l1').addClass($avenger+"_lines");
+		})
+	</script>
+</head>
+<body>
+	<!-- <div class="container content col-sm-3">
+		<ul>
+			<li class="l1">Name      		:    Testing raja</li>
+			<li class="l2">Club ID   		:    ID is here</li>
+			<li class="l1">Email ID  		:    Email</li>
+			<li class="l2">Field     		:    Area of Interest</li>
+			<li class="l1">Year      		:    year + C.S.E</li>
+			<li class="l2">Academic Info   	:    NOT Available</li>
+		</ul>
+	</div> -->
+	<div class="container col-md-5 main">
+		<table class="table content col-md-10">
+			<tbody>
+				<tr class="l1">
+					<th>Name</th>
+					<td>name goes here</td>
+				</tr>
+				<tr class="l2">
+					<th>Club ID</th>
+					<td>ID goes here</td>
+				</tr>
+				<tr class="l1">
+					<th>Email ID</th>
+					<td>Id will be here</td>
+				</tr>
+				<tr class="l2">
+					<th>Field</th>
+					<td>Area of interest goes here</td>
+				</tr>
+				<tr class="l1">
+					<th>Year</th>
+					<td>Second Year C.S.E</td>
+				</tr>
+				<tr class="l2">
+					<th>More Info</th>
+					<td>Second Year C.S.E</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

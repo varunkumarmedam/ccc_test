@@ -13,7 +13,7 @@
 
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="script/main.js"></script>
+  <script type="text/javascript" src="script/jquery.js"></script>
   <script type="text/javascript" src="script/nav.js"></script>
   
   <!--offline--><link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -40,6 +40,14 @@
     p.ccc_head{color:white;font-size: 30px;display: block;}
     p.ccc{display: none;}
     .carousel_size{height: 620px;}
+  }
+  #links{
+    font-size: 20px;
+    text-decoration: none;
+    color:red!important;
+  }
+  .notis{
+    font-size: 18px; margin-bottom: 8px;
   }
 
   </style>
@@ -128,13 +136,13 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
 		  <div class="item">
 		    <img src="imgs/slide2.jpg" alt="Slide 2" style="width:100%; height: 100%">
 		    <div class="carousel-caption">
-		      <h3>Assasins creed aa majaka</h3>
+		      <h3>Code Labs</h3>
 		      <p>Thank you, Folks!</p>
 		    </div>
 		  </div>
 
 		  <div class="item">
-		    <img src="imgs/slide3.jpg" alt="New York" style="width:100%; height: 100%">
+		    <img src="imgs/slide3.jpeg" alt="New York" style="width:100%; height: 100%">
 		    <div class="carousel-caption">
 		      <h3>Registration</h3>
 		      <p>Reg only for club members</p>
@@ -161,7 +169,7 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
        <li class='active'><a href='#'>Home</a></li>
        <li><a href='team'>Contributors</a></li>
        <li><a href='gallery'>Gallery</a></li>
-       <li><a href='#'>Campaigns</a></li>
+       <li><a href='events'>Campaigns</a></li>
        <li><a href='about'>About Us</a></li>
        <li><a href='contact'>Contact Us</a></li>
     </ul>
@@ -183,8 +191,12 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
       <div class="noti_body col-sm-12">
         <marquee direction="up" scrollamount="3" behavior="scroll" height="250px" id="test">
           <ul class="notifications">
-            <li>Hello world</li>
-            <li>varunvorld</li>
+            <li class="notis">
+              Club Inauguration - Event went on September 05,2018 .<a href="gallery" id="links">Click for more</a>
+            </li>
+            <li class="notis">
+              TECHWIZZ - Event went on September 20 .<a href="events/#h1" id="links">Click to know</a>
+            </li>
             <li>Test world</li>
           </ul>
         </marquee>
@@ -199,7 +211,7 @@ height: 100%;text-align: center;z-index: 10;" id="popover">
     bottom: 0;
     margin-bottom: 0px;
     font-style: bold;
-    font-size: 20px;">creative computing club copyright &copy; 2018</p>
+    font-size: 20px;">Copyright &copy; 2018 C.C.C</p>
   </footer>
 </div>
 
